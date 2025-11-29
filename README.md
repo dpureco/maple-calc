@@ -20,6 +20,32 @@ A modern, responsive cubing calculator for MapleStory built with Vue 3 and Vite.
 - All item types (15 categories)
 - All stat combinations from reference project
 - Special stats (Cooldown for hats, Crit Damage for gloves, Meso/Drop for accessories)
+# MapleCalc - Cubing Probability Calculator
+[![Pages deploy](https://github.com/dpureco/maple-calc/actions/workflows/deploy.yml/badge.svg)](https://github.com/dpureco/maple-calc/actions/workflows/deploy.yml) [![Build Status](https://github.com/dpureco/maple-calc/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/dpureco/maple-calc/actions)
+
+# MapleCalc - Cubing Probability Calculator
+# MapleCalc - Cubing Probability Calculator
+
+A modern, responsive cubing calculator for MapleStory built with Vue 3 and Vite.
+
+## Features
+
+✨ **Modern UI**
+- Clean, minimal design
+- Light and dark mode support
+- Fully responsive (desktop, tablet, mobile)
+- Smooth transitions and animations
+
+🎯 **Comprehensive Calculations**
+- Side-by-side comparison of Glowing (Red) and Bright (Black) cubes
+- Automatic highlighting of best cube option
+- Detailed statistics (mean, median, percentiles)
+- Tier-up cost calculations (optional)
+
+📊 **Complete Stat Options**
+- All item types (15 categories)
+- All stat combinations from reference project
+- Special stats (Cooldown for hats, Crit Damage for gloves, Meso/Drop for accessories)
 - Complex combinations (Attack + Boss, 2L Attack + IED, etc.)
 - Demon Avenger HP calculations
 - Xenon All Stat calculations
@@ -105,7 +131,7 @@ maple-calc/
 │   ├── utils/
 │   │   ├── probability.js         # Probability calculations
 │   │   ├── statistics.js          # Geometric distribution
-│   │   ├── cubeCosts.js          # Cost calculations
++│   │   ├── cubeCosts.js          # Cost calculations
 │   │   └── statOptions.js        # Dynamic option generation
 │   ├── App.vue                    # Main app with theme toggle
 │   └── main.js                    # App entry point
