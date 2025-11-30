@@ -29,8 +29,11 @@ function createChart() {
     return acc
   }, new Map())
 
+  // Sort keys in ascending order
+  const sortedKeys = Array.from(boomMap.keys()).sort((a, b) => a - b)
+
   // Get colors for each column
-  const colorMatrix = Array.from(boomMap.keys()).map(key => {
+  const colorMatrix = sortedKeys.map(key => {
     return grabColumnColors(key, props.boomPercentiles)
   })
 
@@ -38,9 +41,9 @@ function createChart() {
   const borderArray = colorMatrix.map(el => el.border)
 
   const chartData = {
-    labels: Array.from(boomMap.keys()),
+    labels: sortedKeys,
     datasets: [{
-      data: Array.from(boomMap.values()),
+      data: sortedKeys.map(key => boomMap.get(key)),
       backgroundColor: backgroundArray,
       borderColor: borderArray,
       borderWidth: 1
